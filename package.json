@@ -8,5 +8,10 @@
   },
   "author": "",
   "repository": "",
-  "license": "BSD"
+  "license": "BSD",
+  "fisx": {
+    "requireConfig": {
+      "baseUrl": "src"
+    }
+  }
 }

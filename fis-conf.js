@@ -23,11 +23,7 @@ fis.match('index.html', {
 
 // 启用 amd 模块编译
 fis.hook('amd', {
-    config: {
-        baseUrl: 'src',
-        packages: [],
-        paths: {}
-    }
+    config: fis.getModuleConfig()
 });
 
 // 启用打包插件

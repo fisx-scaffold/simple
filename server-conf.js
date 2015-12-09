@@ -30,12 +30,7 @@ exports.directoryIndexes = true;
 exports.documentRoot = __dirname;
 
 exports.getLocations = function () {
-    var requireInjector = requireConfigInjector({
-        // 自定义注入 `require.config` 的自定义配置
-        requireConfig: {
-            baseUrl: 'src'
-        }
-    });
+    var requireInjector = requireConfigInjector();
 
     return [
         {
@@ -63,10 +58,10 @@ exports.getLocations = function () {
 
         // 添加 mock 处理器
         autoresponse('edp', {
-            watch: true,
             logLevel: 'debug',
             root: __dirname,
-            handlers: requireInjector
+            handlers: requireInjector,
+            post: true
         }),
 
         {
