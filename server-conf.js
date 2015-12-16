@@ -68,6 +68,7 @@ exports.getLocations = function () {
             location: /^.*$/,
             handler: [
                 file(),
+                requireInjector,
                 proxyNoneExists()
             ]
         }
