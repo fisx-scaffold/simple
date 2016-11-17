@@ -9,7 +9,7 @@
   "author": "",
   "repository": "",
   "license": "BSD",
-  "fisx": {
+  "${#manifestKey#}": {
     "requireConfig": {
       "baseUrl": "src"
     }
