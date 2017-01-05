@@ -81,3 +81,12 @@ exports.injectRes = function (res) {
         }
     }
 };
+
+// disable watchreload setting false
+exports.watchreload = {
+    hmr: false,
+    files: [
+        'src/**/*',
+        'index.html'
+    ]
+};
