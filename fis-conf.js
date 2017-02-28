@@ -10,7 +10,8 @@ fis.initProcessStyleFiles(pageFiles, {});
 
 // 启用相对路径
 fis.match('index.html', {
-    relative: true
+    relative: true,
+    useCache: false
 }).match('*.js', {
     relative: true
 }).match('*.css', {
